@@ -12,9 +12,13 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 public class MpConfig {
 
+
     /**
-     * 乐观锁插件
-     */
+     * @return
+     * @Date 2020/7/16 20:49
+     * @Author jiangheng
+     * @Description //TODO 乐观锁
+     **/
     @Bean
     public OptimisticLockerInterceptor optimisticLockerInterceptor() {
         return new OptimisticLockerInterceptor();
